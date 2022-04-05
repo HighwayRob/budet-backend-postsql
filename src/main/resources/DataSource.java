@@ -12,11 +12,9 @@ public class DataSource {
         source.setPassword("a323bc337c559fffd0ec7029daaf60f03712cdb1df41ca8629fe8429f0a7a607");
         return source;
     }
-
     @Bean
     public NamedParameterJdbcTemplate namedParameterJdbcTemplate(){
         NamedParameterJdbcTemplate namedParameterJdbcTemplate = new NamedParameterJdbcTemplate(this.dataSource());
         return namedParameterJdbcTemplate;
     }
-
 }
